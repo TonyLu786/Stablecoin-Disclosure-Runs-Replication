@@ -1,0 +1,6 @@
+event_id,stablecoin,event_date,publication_date,coverage_start,coverage_end,event_type,scheduled_flag,ad_hoc_flag,stress_regime,source_url,source_file,short_description,coding_confidence,notes
+EVT_TEMPLATE_001,USDC,YYYY-MM-DD,YYYY-MM-DD,YYYY-MM-DD,YYYY-MM-DD,monthly_assurance,1,0,normal,https://www.circle.com/transparency,,Monthly assurance report released according to routine schedule,high,Use publication date as event date unless report release timestamp differs.
+EVT_TEMPLATE_002,USDT,YYYY-MM-DD,YYYY-MM-DD,YYYY-MM-DD,YYYY-MM-DD,quarterly_attestation,1,0,crypto_stress,https://tether.to/en/transparency/?tab=usdt,,Quarterly reserves report during crypto stress window,medium,Record exact report title and archived PDF path.
+EVT_TEMPLATE_003,BUSD,YYYY-MM-DD,YYYY-MM-DD,,,regulatory_redemption_notice,0,1,regulatory_stress,https://www.dfs.ny.gov/consumers/alerts/Paxos_and_Binance,,Regulatory/issuer event affecting minting or redemption expectations,high,Treat separately from routine reserve disclosures.
+EVT_TEMPLATE_004,TUSD,YYYY-MM-DD,YYYY-MM-DD,YYYY-MM-DD,YYYY-MM-DD,daily_attestation,1,0,normal,https://tusd.io/transparency,,Daily reserve attestation,medium,May need sampling or aggregation because daily frequency is high.
+

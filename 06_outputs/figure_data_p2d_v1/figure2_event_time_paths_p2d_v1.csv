@@ -1,0 +1,46 @@
+plot_group,issuer_scope,event_class,relative_day,n_event_units,mean_abs_peg_dev_bps,mean_peer_adjusted_abs_peg_dev_bps,tail50_rate,rule_version
+USDC scheduled disclosures,USDC,scheduled,-7,24,6.279630083333334,-5.211789741666666,0.0,RQI_DII_v1.0
+USDC scheduled disclosures,USDC,scheduled,-6,24,4.775699,-7.430914850000001,0.0,RQI_DII_v1.0
+USDC scheduled disclosures,USDC,scheduled,-5,24,7.077574583333333,-5.460175166666667,0.0416666666666666,RQI_DII_v1.0
+USDC scheduled disclosures,USDC,scheduled,-4,24,7.1584233333333325,-3.793776125,0.0416666666666666,RQI_DII_v1.0
+USDC scheduled disclosures,USDC,scheduled,-3,24,5.2366486666666665,-5.854580741666666,0.0,RQI_DII_v1.0
+USDC scheduled disclosures,USDC,scheduled,-2,24,4.352487,-8.457910316666668,0.0,RQI_DII_v1.0
+USDC scheduled disclosures,USDC,scheduled,-1,24,5.8633482500000005,-8.905357566666666,0.0416666666666666,RQI_DII_v1.0
+USDC scheduled disclosures,USDC,scheduled,0,24,8.940671458333332,-0.7948762500000001,0.0416666666666666,RQI_DII_v1.0
+USDC scheduled disclosures,USDC,scheduled,1,24,7.674849291666667,-0.5664082750000002,0.0416666666666666,RQI_DII_v1.0
+USDC scheduled disclosures,USDC,scheduled,2,24,7.195987708333333,-1.510693941666667,0.0416666666666666,RQI_DII_v1.0
+USDC scheduled disclosures,USDC,scheduled,3,24,6.924572291666666,-1.4943445999999998,0.0,RQI_DII_v1.0
+USDC scheduled disclosures,USDC,scheduled,4,24,4.520312208333333,-3.433760849999999,0.0,RQI_DII_v1.0
+USDC scheduled disclosures,USDC,scheduled,5,24,4.796093916666667,-4.658816591666667,0.0,RQI_DII_v1.0
+USDC scheduled disclosures,USDC,scheduled,6,24,5.191952958333333,-5.808106083333333,0.0,RQI_DII_v1.0
+USDC scheduled disclosures,USDC,scheduled,7,24,5.096753916666667,-1.4863046416666663,0.0,RQI_DII_v1.0
+Non-USDC scheduled disclosures,non_USDC,scheduled,-7,2,7.67,-11.369,0.0,RQI_DII_v1.0
+Non-USDC scheduled disclosures,non_USDC,scheduled,-6,2,0.58,-12.062,0.0,RQI_DII_v1.0
+Non-USDC scheduled disclosures,non_USDC,scheduled,-5,2,1.385,-13.075000000000005,0.0,RQI_DII_v1.0
+Non-USDC scheduled disclosures,non_USDC,scheduled,-4,2,6.045,-13.957,0.0,RQI_DII_v1.0
+Non-USDC scheduled disclosures,non_USDC,scheduled,-3,2,4.64,-8.066,0.0,RQI_DII_v1.0
+Non-USDC scheduled disclosures,non_USDC,scheduled,-2,2,5.135000000000001,-6.743,0.0,RQI_DII_v1.0
+Non-USDC scheduled disclosures,non_USDC,scheduled,-1,2,3.955,-7.927,0.0,RQI_DII_v1.0
+Non-USDC scheduled disclosures,non_USDC,scheduled,0,2,16.165,5.7090000000000005,0.0,RQI_DII_v1.0
+Non-USDC scheduled disclosures,non_USDC,scheduled,1,2,16.38,-1.665,0.0,RQI_DII_v1.0
+Non-USDC scheduled disclosures,non_USDC,scheduled,2,2,6.115,-8.617999999999999,0.0,RQI_DII_v1.0
+Non-USDC scheduled disclosures,non_USDC,scheduled,3,2,15.0,-14.534000000000002,0.0,RQI_DII_v1.0
+Non-USDC scheduled disclosures,non_USDC,scheduled,4,2,10.0,-12.355999999999998,0.0,RQI_DII_v1.0
+Non-USDC scheduled disclosures,non_USDC,scheduled,5,2,10.0,-7.285,0.0,RQI_DII_v1.0
+Non-USDC scheduled disclosures,non_USDC,scheduled,6,2,5.0,-33.095,0.0,RQI_DII_v1.0
+Non-USDC scheduled disclosures,non_USDC,scheduled,7,2,0.22,-14.081,0.0,RQI_DII_v1.0
+Non-USDC ad hoc events,non_USDC,ad_hoc,-7,2,1.87085,0.54794,0.0,RQI_DII_v1.0
+Non-USDC ad hoc events,non_USDC,ad_hoc,-6,2,2.53195,0.59907,0.0,RQI_DII_v1.0
+Non-USDC ad hoc events,non_USDC,ad_hoc,-5,2,2.62325,-1.0345199999999997,0.0,RQI_DII_v1.0
+Non-USDC ad hoc events,non_USDC,ad_hoc,-4,2,2.25595,0.85418,0.0,RQI_DII_v1.0
+Non-USDC ad hoc events,non_USDC,ad_hoc,-3,2,1.85025,0.20303,0.0,RQI_DII_v1.0
+Non-USDC ad hoc events,non_USDC,ad_hoc,-2,2,1.86235,-2.005180000000001,0.0,RQI_DII_v1.0
+Non-USDC ad hoc events,non_USDC,ad_hoc,-1,2,1.6973,-0.4902099999999998,0.0,RQI_DII_v1.0
+Non-USDC ad hoc events,non_USDC,ad_hoc,0,2,0.85575,-1.5709999999999995,0.0,RQI_DII_v1.0
+Non-USDC ad hoc events,non_USDC,ad_hoc,1,2,1.4922,-2.614860000000001,0.0,RQI_DII_v1.0
+Non-USDC ad hoc events,non_USDC,ad_hoc,2,2,1.5058000000000002,-2.28138,0.0,RQI_DII_v1.0
+Non-USDC ad hoc events,non_USDC,ad_hoc,3,2,1.7727,-2.7057999999999995,0.0,RQI_DII_v1.0
+Non-USDC ad hoc events,non_USDC,ad_hoc,4,2,0.60845,-3.273719999999999,0.0,RQI_DII_v1.0
+Non-USDC ad hoc events,non_USDC,ad_hoc,5,2,0.4627,-0.8283600000000001,0.0,RQI_DII_v1.0
+Non-USDC ad hoc events,non_USDC,ad_hoc,6,2,0.389,-1.5943799999999997,0.0,RQI_DII_v1.0
+Non-USDC ad hoc events,non_USDC,ad_hoc,7,2,0.7420500000000001,-0.7748499999999999,0.0,RQI_DII_v1.0

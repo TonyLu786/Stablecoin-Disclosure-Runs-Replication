@@ -1,0 +1,7 @@
+stablecoin,issuer,role,gecko_id,defillama_asset_id,defillama_name,defillama_symbol,peg_type,peg_mechanism,price_source,asset_found,access_date,source_url,rule_version,rule_status
+USDT,Tether,main_comparator,tether,1,Tether,USDT,peggedUSD,fiat-backed,defillama,1,2026-05-22,https://stablecoins.llama.fi/stablecoins?includePrices=true,RQI_DII_v1.0,frozen_confirmed_by_researcher
+USDC,Circle,pilot_disclosure_coin,usd-coin,2,USD Coin,USDC,peggedUSD,fiat-backed,defillama,1,2026-05-22,https://stablecoins.llama.fi/stablecoins?includePrices=true,RQI_DII_v1.0,frozen_confirmed_by_researcher
+USDP,Paxos,regulated_comparator,paxos-standard,11,Pax Dollar,USDP,peggedUSD,fiat-backed,defillama,1,2026-05-22,https://stablecoins.llama.fi/stablecoins?includePrices=true,RQI_DII_v1.0,frozen_confirmed_by_researcher
+BUSD,Paxos/Binance,regulated_comparator_winddown,binance-usd,4,Binance USD,BUSD,peggedUSD,fiat-backed,defillama,1,2026-05-22,https://stablecoins.llama.fi/stablecoins?includePrices=true,RQI_DII_v1.0,frozen_confirmed_by_researcher
+TUSD,Techteryx/TrueUSD,attestation_frequency_comparator,true-usd,7,TrueUSD,TUSD,peggedUSD,fiat-backed,defillama,1,2026-05-22,https://stablecoins.llama.fi/stablecoins?includePrices=true,RQI_DII_v1.0,frozen_confirmed_by_researcher
+PYUSD,Paxos/PayPal,post_2023_extension,paypal-usd,120,PayPal USD,PYUSD,peggedUSD,fiat-backed,defillama,1,2026-05-22,https://stablecoins.llama.fi/stablecoins?includePrices=true,RQI_DII_v1.0,frozen_confirmed_by_researcher

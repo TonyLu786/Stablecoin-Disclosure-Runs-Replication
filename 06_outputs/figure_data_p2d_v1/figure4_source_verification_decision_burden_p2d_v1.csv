@@ -1,0 +1,6 @@
+recommended_decision,events
+close_manual_review_after_spotcheck,3
+defer_or_manual_review,5
+human_review_required_before_body_inclusion,3
+researcher_decision_required_merge_or_select_single_episode,2
+separate_usdc_bulk_spotcheck,31

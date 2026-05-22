@@ -1,0 +1,7 @@
+stablecoin,rows,tail_50bp_days,tail_100bp_days,manual_market_review_rows,low_supply_lifecycle_rows,max_abs_peg_dev,median_supply_proxy,rule_version,rule_status,provisional_flag,provisional_reason
+BUSD,1096,150,78,150,0,0.129108,4123633325.0,RQI_DII_v1.0,frozen_confirmed_by_researcher,1,market_abnormal_price_qc_pending
+PYUSD,1096,8,2,53,53,0.015,270122532.0,RQI_DII_v1.0,frozen_confirmed_by_researcher,1,market_abnormal_price_qc_pending
+TUSD,1096,92,54,92,0,0.035645,1109940489.5,RQI_DII_v1.0,frozen_confirmed_by_researcher,1,market_abnormal_price_qc_pending
+USDC,1096,16,2,2,0,0.038935,34667528982.5,RQI_DII_v1.0,frozen_confirmed_by_researcher,1,market_abnormal_price_qc_pending
+USDP,1096,25,4,4,0,0.0159259954,739080363.0,RQI_DII_v1.0,frozen_confirmed_by_researcher,1,market_abnormal_price_qc_pending
+USDT,1096,18,2,2,0,0.011,83114449131.5,RQI_DII_v1.0,frozen_confirmed_by_researcher,1,market_abnormal_price_qc_pending

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite it as below."
+title: "Stablecoin Disclosure and Runs: Public Replication Package"
+authors:
+  - family-names: Lu
+    given-names: Juntong
+    orcid: "https://orcid.org/0009-0007-3301-6526"
+date-released: "2026-05-22"
+version: "1.0.0"
+repository-code: "https://github.com/TonyLu786/stablecoin-disclosure-runs-replication"
+license: MIT

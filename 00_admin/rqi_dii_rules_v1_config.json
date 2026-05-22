@@ -1,0 +1,83 @@
+{
+  "rule_version": "RQI_DII_v1.0",
+  "rule_status": "frozen_confirmed_by_researcher",
+  "confirmation_date": "2026-05-22",
+  "confirmation_source": "Researcher confirmed all selected expert-panel options in the researcher decision record.",
+  "selected_path": "Path B",
+  "interpretation_boundary": "pipeline_and_pilot_design_claims_only",
+  "rqi_weight_profile": "primary_path_b",
+  "rqi_weights_primary": {
+    "treasury_securities": 0.95,
+    "treasury_repo": 0.95,
+    "reserve_fund_cash": 1.0,
+    "bank_cash": 0.8,
+    "other_residual": 0.2
+  },
+  "rqi_robustness_weights": [
+    {
+      "profile": "bank_cash_070",
+      "treasury_securities": 0.95,
+      "treasury_repo": 0.95,
+      "reserve_fund_cash": 1.0,
+      "bank_cash": 0.7,
+      "other_residual": 0.2
+    },
+    {
+      "profile": "bank_cash_090",
+      "treasury_securities": 0.95,
+      "treasury_repo": 0.95,
+      "reserve_fund_cash": 1.0,
+      "bank_cash": 0.9,
+      "other_residual": 0.2
+    },
+    {
+      "profile": "repo_090",
+      "treasury_securities": 0.95,
+      "treasury_repo": 0.9,
+      "reserve_fund_cash": 1.0,
+      "bank_cash": 0.8,
+      "other_residual": 0.2
+    }
+  ],
+  "dii_components": {
+    "monthly_assurance_frequency_score": 0.6,
+    "assurance_score_aicpa": 1.0,
+    "weekly_disclosures_treatment": "separate_events_future_layer"
+  },
+  "early_2022_aggregate_reports": {
+    "keep_for_dii_and_timing": true,
+    "exclude_from_rqi_interpretation": true,
+    "impute_rqi": false
+  },
+  "april_2023_usdc_report": {
+    "keep_for_dii_and_event_timing": true,
+    "rqi_status": "missing_until_manual_reconciliation",
+    "use_automated_rqi": false
+  },
+  "auditor_provider_coding": {
+    "status": "provisional_until_visual_or_official_verification",
+    "freeze_from_ocr_text": false
+  },
+  "event_study": {
+    "event_date_rule": "publication_date",
+    "primary_windows_days": [3, 7],
+    "robustness_windows_days": [14],
+    "weekly_disclosures_treatment": "separate_events_future_layer"
+  },
+  "stress_regime_calendar": {
+    "status": "provisional_with_short_window_robustness",
+    "primary_use_allowed": true
+  },
+  "allowed_claim_scope": [
+    "data pipeline feasibility",
+    "pilot-design validation",
+    "methodological architecture",
+    "non-final descriptive diagnostics"
+  ],
+  "blocked_claim_scope_until_later_stages": [
+    "final causal effect claims",
+    "multi-issuer generalization",
+    "policy conclusion claims",
+    "substantive RQI/DII coefficient interpretation"
+  ]
+}

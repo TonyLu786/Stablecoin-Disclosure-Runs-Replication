@@ -1,0 +1,8 @@
+group,plot_label,window_days,event_units,mean_delta_abs_peg_dev_bps,mean_delta_peer_adjusted_abs_bps,max_event_day_abs_peg_dev_bps,interpretation_status,rule_version
+usdc_units,USDC scheduled,7,24,0.4721048020833332,3.975765311309523,78.603676,descriptive_only_small_sample_no_causal_claim,RQI_DII_v1.0
+non_usdc_units,Non-USDC all,7,4,2.2691549107142857,-1.0248922321428573,30.0,descriptive_only_small_sample_no_causal_claim,RQI_DII_v1.0
+non_usdc_scheduled_units,Non-USDC scheduled,7,2,5.658571428571428,-0.2836250000000007,30.0,descriptive_only_small_sample_no_causal_claim,RQI_DII_v1.0
+non_usdc_ad_hoc_units,Non-USDC ad hoc,7,2,-1.120261607142857,-1.766159464285714,1.1067,descriptive_only_small_sample_no_causal_claim,RQI_DII_v1.0
+busd_units,BUSD,7,1,0.1257178571428572,-0.6434924999999998,0.6048,descriptive_only_small_sample_no_causal_claim,RQI_DII_v1.0
+usdt_units,USDT,7,2,-1.4009776785714292,-0.5491096428571429,2.33,descriptive_only_small_sample_no_causal_claim,RQI_DII_v1.0
+usdp_units,USDP,7,1,11.752857142857144,-2.357857142857144,30.0,descriptive_only_small_sample_no_causal_claim,RQI_DII_v1.0

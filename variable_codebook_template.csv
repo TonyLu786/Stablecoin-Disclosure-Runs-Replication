@@ -1,0 +1,31 @@
+variable_name,variable_group,unit,definition,construction_rule,source,expected_frequency,missing_data_rule,robustness_variant
+coin_id,id,stablecoin,Stablecoin identifier,Manual mapping to canonical ticker and issuer,sample_list.csv,daily,drop if unknown,none
+date,id,date,Observation date,UTC date; align disclosures by publication date,all sources,daily,required,alternative timezone check
+price_usd,dependent,USD,Stablecoin market price,Median price across selected exchanges or aggregator,exchange APIs; CoinGecko,daily,source hierarchy fill,exchange-specific prices
+abs_peg_dev,dependent,decimal,Absolute peg deviation,abs(price_usd - 1),constructed,daily,missing if price missing,winsorized version
+tail_depeg_50bp,dependent,binary,Large peg deviation indicator,1 if abs_peg_dev >= 0.005,constructed,daily,missing if price missing,100bp threshold
+tail_depeg_100bp,dependent,binary,Tail depeg indicator,1 if abs_peg_dev >= 0.010,constructed,daily,missing if price missing,50bp threshold
+below_peg_100bp,dependent,binary,Below-par depeg indicator,1 if price_usd <= 0.99,constructed,daily,missing if price missing,below 0.995
+depeg_duration_days,dependent,days,Consecutive days outside peg band,Count consecutive tail_depeg days,constructed,daily,reset after missing gap,alternative threshold
+cash_share,rqi_component,share,Share of reserves in cash,Cash reserve amount divided by total disclosed reserves,issuer reports,report_level,carry forward until next report,conservative recoding
+tbill_share,rqi_component,share,Share of reserves in short-term Treasury bills,T-bill amount divided by total disclosed reserves,issuer reports,report_level,carry forward until next report,include reverse repo
+bank_deposit_share,rqi_component,share,Share of reserves in bank deposits,Bank deposits divided by total disclosed reserves,issuer reports,report_level,carry forward until next report,bank stress interaction
+commercial_paper_share,rqi_component,share,Share of reserves in commercial paper or corporate debt,CP/corporate debt divided by total reserves,issuer reports,report_level,carry forward until next report,lower quality weight
+opaque_other_share,rqi_component,share,Share of undisclosed or other assets,Other/unknown divided by total reserves,issuer reports,report_level,set unknown to opaque,opaque penalty variant
+rqi,key_explanatory,index,Reserve Quality Index,Weighted sum of asset shares and quality weights,constructed,daily,carry forward with stale flag,alternative weights
+disclosure_frequency_score,dii_component,index,Frequency of reserve disclosure,Daily=1 weekly=.8 monthly=.6 quarterly=.35 irregular=.15,issuer reports,daily,carry forward,ordinal variants
+disclosure_granularity_score,dii_component,index,Detail level of disclosed reserves,Security-level=1 asset-class=.7 broad=.4 aggregate=.15,issuer reports,daily,carry forward,binary high granularity
+disclosure_timeliness_score,dii_component,index,Publication lag quality,<=7d=1 <=30d=.7 <=90d=.4 >90d=.15,issuer reports,report_level,missing if no publication date,continuous lag
+assurance_score,dii_component,index,Third-party assurance strength,Approved CPA/Big Four=1 independent=.8 issuer-only=.3 none=0,issuer reports,report_level,carry forward,assurance dummy
+dii,key_explanatory,index,Disclosure Intensity Index,Weighted average of frequency granularity timeliness assurance,constructed,daily,carry forward with stale flag,component decomposition
+scheduled_disclosure,event,binary,Report released on routine schedule,1 if planned periodic report or attestation,event coding,event_day,0 if no event,exclude ambiguous events
+ad_hoc_reassurance,event,binary,Crisis-contingent issuer communication,1 if disclosure responds to stress or rumor,event coding,event_day,0 if no event,narrative-only sensitivity
+crypto_stress,control,index,Crypto market stress proxy,Negative BTC/ETH return or market drawdown,market data,daily,interpolate only for nontrading mismatch,alternative volatility proxy
+banking_stress,control,binary_or_index,Banking-sector stress proxy,SVB window or bank index drawdown,market data; event list,daily,0 outside windows,index variant
+vix,control,index,Traditional market risk appetite,CBOE VIX level,CBOE/FRED,daily,forward fill nontrading days,changes not levels
+treasury_yield_3m,control,percent,Short-rate and safe asset yield,3-month Treasury yield,FRED,daily,forward fill nontrading days,SOFR or Fed funds
+log_market_cap,control,log_usd,Stablecoin size,log market capitalization,CoinGecko; DeFiLlama,daily,source hierarchy fill,lagged value
+trading_volume,control,usd,Trading volume,Daily spot volume across selected markets,exchange APIs; CoinGecko,daily,source hierarchy fill,log volume
+supply_change,mechanism,decimal,Change in circulating supply,log supply_t - log supply_t-1,issuer; DeFiLlama; on-chain,daily,missing if supply absent,chain-level supply
+market_share_change,mechanism,decimal,Change in stablecoin market share,Coin mcap / total stablecoin mcap change,DeFiLlama; CoinGecko,daily,missing if mcap absent,relative to top stablecoins
+

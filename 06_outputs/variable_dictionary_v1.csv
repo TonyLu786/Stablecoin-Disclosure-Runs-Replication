@@ -1,0 +1,144 @@
+dataset,variable,definition,type,role,source_or_derivation,rule_version,final_inference_status
+price_supply_panel_raw_v1.csv,date,calendar date of market observation,date,market panel,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,stablecoin,stablecoin ticker or symbol,string,identifier,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,issuer,issuer or responsible entity,string,identifier,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,gecko_id,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,defillama_asset_id,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,price_usd,daily USD price,numeric,market outcome input,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,peg_dev,price_usd minus 1.00,numeric,market outcome,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,pilot_or_qc
+price_supply_panel_raw_v1.csv,abs_peg_dev,absolute value of peg_dev,numeric,market outcome,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,pilot_or_qc
+price_supply_panel_raw_v1.csv,tail_depeg_50bp,indicator for absolute peg deviation at least 50 basis points,binary,market outcome,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,pilot_or_qc
+price_supply_panel_raw_v1.csv,tail_depeg_100bp,indicator for absolute peg deviation at least 100 basis points,binary,market outcome,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,pilot_or_qc
+price_supply_panel_raw_v1.csv,downside_depeg_50bp,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,downside_depeg_100bp,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,premium_50bp,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,circulating_face_usd,face-value circulating supply proxy,numeric,market control,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,market_cap_usd_est,estimated market cap as supply times price,numeric,market control,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,active_chains_with_supply,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,market_stress_flag,candidate stress-regime indicator,binary,stress control,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,market_stress_window_ids,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,market_stress_types,stress-regime type labels,string,stress control,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,source_price,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,source_supply,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,access_date,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,rule_version,coding rule version used to generate row,string,provenance,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,RQI_DII_v1.0,supporting
+price_supply_panel_raw_v1.csv,rule_status,status of coding rule version,string,provenance,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,RQI_DII_v1.0,supporting
+price_supply_panel_raw_v1.csv,provisional_flag,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+price_supply_panel_raw_v1.csv,provisional_reason,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,DeFiLlama stablecoin endpoints and build_market_panel_p0d.py,,supporting
+minimum_viable_panel_v1.csv,date,calendar date of market observation,date,market panel,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,stablecoin,stablecoin ticker or symbol,string,identifier,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,issuer,issuer or responsible entity,string,identifier,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,gecko_id,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,defillama_asset_id,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,price_usd,daily USD price,numeric,market outcome input,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,peg_dev,price_usd minus 1.00,numeric,market outcome,as-of merge of market panel with USDC disclosure coding,,pilot_or_qc
+minimum_viable_panel_v1.csv,abs_peg_dev,absolute value of peg_dev,numeric,market outcome,as-of merge of market panel with USDC disclosure coding,,pilot_or_qc
+minimum_viable_panel_v1.csv,tail_depeg_50bp,indicator for absolute peg deviation at least 50 basis points,binary,market outcome,as-of merge of market panel with USDC disclosure coding,,pilot_or_qc
+minimum_viable_panel_v1.csv,tail_depeg_100bp,indicator for absolute peg deviation at least 100 basis points,binary,market outcome,as-of merge of market panel with USDC disclosure coding,,pilot_or_qc
+minimum_viable_panel_v1.csv,downside_depeg_50bp,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,downside_depeg_100bp,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,premium_50bp,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,circulating_face_usd,face-value circulating supply proxy,numeric,market control,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,market_cap_usd_est,estimated market cap as supply times price,numeric,market control,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,active_chains_with_supply,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,market_stress_flag,candidate stress-regime indicator,binary,stress control,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,market_stress_window_ids,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,market_stress_types,stress-regime type labels,string,stress control,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,source_price,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,source_supply,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,access_date,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,rule_version,coding rule version used to generate row,string,provenance,as-of merge of market panel with USDC disclosure coding,RQI_DII_v1.0,supporting
+minimum_viable_panel_v1.csv,rule_status,status of coding rule version,string,provenance,as-of merge of market panel with USDC disclosure coding,RQI_DII_v1.0,supporting
+minimum_viable_panel_v1.csv,provisional_flag,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,provisional_reason,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,latest_disclosure_event_id,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,latest_disclosure_report_date,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,latest_disclosure_publication_date,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,days_since_disclosure,days since the latest public disclosure assigned by as-of merge,numeric,disclosure timing,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,stale_disclosure_45d,indicator for more than 45 days since disclosure,binary,disclosure timing,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,report_to_publication_lag_days,days between report date and publication date,numeric,disclosure timing,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,pilot_rqi_asof,latest RQI assigned to market day by publication-date as-of rule,numeric,RQI,as-of merge of market panel with USDC disclosure coding,RQI_DII_v1.0,pilot_or_qc
+minimum_viable_panel_v1.csv,pilot_dii_asof,latest DII assigned to market day by publication-date as-of rule,numeric,DII,as-of merge of market panel with USDC disclosure coding,RQI_DII_v1.0,pilot_or_qc
+minimum_viable_panel_v1.csv,disclosure_rule_version_asof,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,disclosure_rule_status_asof,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,disclosure_asset_confidence_asof,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,disclosure_manual_review_required_asof,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,stress_regime_asof,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,asof_merge_rule,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+minimum_viable_panel_v1.csv,coding_status,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,as-of merge of market panel with USDC disclosure coding,,supporting
+rqi_dii_pilot_coding_v1.csv,event_id,unique disclosure or event identifier,string,event identifier,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,stablecoin,stablecoin ticker or symbol,string,identifier,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,issuer,issuer or responsible entity,string,identifier,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,document_family,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,rule_version,coding rule version used to generate row,string,provenance,extract_usdc_pilot.py and RQI_DII_v1.0,RQI_DII_v1.0,supporting
+rqi_dii_pilot_coding_v1.csv,rule_status,status of coding rule version,string,provenance,extract_usdc_pilot.py and RQI_DII_v1.0,RQI_DII_v1.0,supporting
+rqi_dii_pilot_coding_v1.csv,rqi_weight_profile,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,report_year,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,report_month,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,report_dates,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,latest_report_date,latest reserve report date in a disclosure,date,disclosure timing,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,publication_date,date the report or event became public,date,event timing,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,publication_lag_days,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,scheduled_flag,indicator for routine scheduled disclosure,binary,event type,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,ad_hoc_flag,indicator for unscheduled issuer/regulatory event,binary,event type,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,stress_regime_flag,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,attestor_or_provider,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,assurance_basis,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,total_reserve_assets_usd,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,treasury_securities_usd,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,treasury_repo_usd,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,reserve_fund_cash_usd,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,bank_cash_usd,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,cash_total_usd,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,treasury_share,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,repo_share,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,cash_total_share,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,bank_cash_share,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,pilot_rqi,Reserve Quality Index at disclosure event,numeric,RQI,extract_usdc_pilot.py and RQI_DII_v1.0,RQI_DII_v1.0,pilot_or_qc
+rqi_dii_pilot_coding_v1.csv,disclosure_frequency_score,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,disclosure_granularity_score,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,disclosure_timeliness_score,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,assurance_score,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,pilot_dii,Disclosure Information Intensity Index at disclosure event,numeric,DII,extract_usdc_pilot.py and RQI_DII_v1.0,RQI_DII_v1.0,pilot_or_qc
+rqi_dii_pilot_coding_v1.csv,asset_extraction_confidence,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,date_extraction_status,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,manual_review_required,flag indicating source or coding item requires human review,binary/string,quality control,extract_usdc_pilot.py and RQI_DII_v1.0,,pilot_or_qc
+rqi_dii_pilot_coding_v1.csv,local_file_path,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+rqi_dii_pilot_coding_v1.csv,notes,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,extract_usdc_pilot.py and RQI_DII_v1.0,,supporting
+multi_issuer_disclosure_event_index_v1.csv,event_id,unique disclosure or event identifier,string,event identifier,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,linked_event_group,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,record_type,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,stablecoin,stablecoin ticker or symbol,string,identifier,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,issuer,issuer or responsible entity,string,identifier,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,event_family,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,document_family,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,document_type,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,event_type,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,report_period,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,report_date,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,publication_date,date the report or event became public,date,event timing,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,event_date,event date used in event-study windows,date,event timing,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,event_date_basis,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,coverage_start,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,coverage_end,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,scheduled_flag,indicator for routine scheduled disclosure,binary,event type,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,ad_hoc_flag,indicator for unscheduled issuer/regulatory event,binary,event type,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,stress_regime,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,source_url,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,source_file_path,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,source_origin,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,source_status,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,attestor_or_provider,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,assurance_basis,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,rqi_available,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,dii_available,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,pilot_rqi,Reserve Quality Index at disclosure event,numeric,RQI,build_multi_issuer_event_index_p1f.py,RQI_DII_v1.0,pilot_or_qc
+multi_issuer_disclosure_event_index_v1.csv,pilot_dii,Disclosure Information Intensity Index at disclosure event,numeric,DII,build_multi_issuer_event_index_p1f.py,RQI_DII_v1.0,pilot_or_qc
+multi_issuer_disclosure_event_index_v1.csv,inclusion_status,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,event_study_ready,indicator that event row has enough date/source status for pilot event windows,binary,event inclusion,build_multi_issuer_event_index_p1f.py,,pilot_or_qc
+multi_issuer_disclosure_event_index_v1.csv,coding_confidence,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,manual_review_required,flag indicating source or coding item requires human review,binary/string,quality control,build_multi_issuer_event_index_p1f.py,,pilot_or_qc
+multi_issuer_disclosure_event_index_v1.csv,priority,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
+multi_issuer_disclosure_event_index_v1.csv,rule_version,coding rule version used to generate row,string,provenance,build_multi_issuer_event_index_p1f.py,RQI_DII_v1.0,supporting
+multi_issuer_disclosure_event_index_v1.csv,rule_status,status of coding rule version,string,provenance,build_multi_issuer_event_index_p1f.py,RQI_DII_v1.0,supporting
+multi_issuer_disclosure_event_index_v1.csv,notes,project-generated variable; see source script for exact derivation,string/numeric,supporting variable,build_multi_issuer_event_index_p1f.py,,supporting
